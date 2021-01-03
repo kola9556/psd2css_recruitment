@@ -1,0 +1,38 @@
+.slider_show_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .cards_wrapper {
+    display: flex;
+    width: 1029px;
+    overflow: hidden;
+
+    @media screen and (max-width: 1150px) {
+      width: 750px;
+    }
+
+    @media screen and (max-width: 850px) {
+      width: 580px;
+      margin-top: 20px;
+    }
+
+    @media screen and (max-width: 680px) {
+      width: 380px;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 280px;
+    }
+
+    @media screen and (max-width: 400px) {
+      width: 180px;
+    }
+  }
+
+  button {
+    background-color: $blueSection;
+    outline: none;
+    border: none;
+  }
+}

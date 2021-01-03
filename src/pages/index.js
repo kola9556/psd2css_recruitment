@@ -1,22 +1,39 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import "../sass/index.scss"
+import logo from "../images/logo.png"
+import FirstSection from "../components/organisms/FirstSection"
+import SecondSection from "../components/organisms/SecondSection"
+
+const PageContent = {
+  firstSection: {
+    heading: "Heading",
+    paragraph: "Lorem ipsum dolor sit amet consect etur adipsicing eilt.",
+  },
+  secondSection: {
+    heading: "Heading",
+    paragraph: "Lorem ipsum dolor sit amet consect etur adipsicing eilt.",
+    secondHeading: "Heading",
+  },
+}
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+    <header>
+      <img className="psd_logo" src={logo} alt="psd2css website logo" />
+    </header>
+    <FirstSection
+      heading={PageContent.firstSection.heading}
+      paragraph={PageContent.firstSection.paragraph}
+    />
+    <SecondSection
+      heading={PageContent.secondSection.heading}
+      secondHeading={PageContent.secondSection.secondHeading}
+      paragraph={PageContent.secondSection.paragraph}
+    />
+  </>
 )
 
 export default IndexPage

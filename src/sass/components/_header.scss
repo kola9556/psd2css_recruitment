@@ -1,0 +1,11 @@
+$logo_width: 8rem;
+$logo_height: 1.9rem;
+header {
+  padding: 1.15rem 0 1.1rem;
+  .psd_logo {
+    width: $logo_width;
+    height: $logo_height;
+    position: relative;
+    left: 20%;
+  }
+}

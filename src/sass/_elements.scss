@@ -1,0 +1,20 @@
+html {
+  //font-size for desktop
+  font-size: $screenSize;
+  //tablet
+  @media screen and (max-width: 700px) {
+    $screenSize: 18px;
+    font-size: $screenSize;
+  }
+
+  //font-size for mobile
+  @media screen and (max-width: 400px) {
+    $screenSize: 16px;
+    font-size: $screenSize;
+  }
+
+  body {
+    margin: 0;
+    font-family: $font;
+  }
+}

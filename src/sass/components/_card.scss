@@ -1,0 +1,82 @@
+.card_wrapper,
+.sec_section_card {
+  width: 331px;
+  height: 229px;
+  margin: 0 9px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  transition: transform 2s;
+
+  @media screen and (max-width: 1150px) {
+    width: 238px;
+    height: 229px;
+  }
+
+  @media screen and (max-width: 850px) {
+    width: 175px;
+    height: 270px;
+  }
+
+  @media screen and (max-width: 680px) {
+    width: 181px;
+    height: 200px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 280px;
+    height: 200px;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 180px;
+    height: 200px;
+  }
+
+  h3 {
+    margin: 1.5rem 1rem 0.75rem;
+    font-weight: $regular;
+    font-size: 1rem;
+    color: $headingGreyText;
+    text-align: center;
+  }
+
+  p {
+    color: $cardParagraph;
+    font-size: 0.75rem;
+    text-align: center;
+    margin: 0 1.5rem;
+    @media screen and (max-width: 850px) {
+      margin: 0 1rem;
+    }
+    @media screen and (max-width: 400px) {
+      margin: 0 1.5rem 0 1rem;
+    }
+  }
+  img {
+    margin-top: 1rem;
+  }
+}
+
+.sec_section_card {
+  @media screen and (max-width: 680px) {
+    width: 230px;
+    height: 220px;
+    margin-bottom: 1rem;
+    h3 {
+      margin: 1.5rem 1rem 0;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 280px;
+    height: 200px;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 180px;
+    height: 200px;
+  }
+}

@@ -1,0 +1,60 @@
+.second_section_wrapper {
+  background-color: $greySection;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: $headingGreyText;
+    font-weight: $regular;
+    margin: 0;
+  }
+
+  h2 {
+    color: $headingGreyText;
+    font-weight: $regular;
+  }
+
+  p {
+    color: $headingGreyText;
+    font-weight: $light;
+    opacity: 0.6;
+    text-align: center;
+
+    @media screen and (max-width: 680px) {
+      margin: 18px 50px;
+    }
+  }
+
+  .sec_section_card p {
+    @media screen and (max-width: 400px) {
+      margin: 18px;
+    }
+  }
+
+  .sec_cards_wrapper {
+    display: flex;
+    width: 1029px;
+
+    @media screen and (max-width: 1150px) {
+      width: 750px;
+    }
+
+    @media screen and (max-width: 850px) {
+      width: 580px;
+      margin-top: 20px;
+    }
+
+    @media screen and (max-width: 680px) {
+      width: 280px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 280px;
+    }
+  }
+}
